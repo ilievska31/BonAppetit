@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:fontFamily="@font/titles"
+                android:text="Choose your preference"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <RadioGroup
+                android:id="@+id/diet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/error">
+
+
+                <RadioButton
+                    android:id="@+id/none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:checked="true"
+                    android:text="no preference" />
+
+                <RadioButton
+                    android:id="@+id/vegan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toEndOf="@+id/none"
+                    android:text="vegan" />
+
+                <RadioButton
+                    android:id="@+id/vegetarian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toEndOf="@+id/vegan"
+                    android:text="vegetarian" />
+
+                <RadioButton
+                    android:id="@+id/glutenFree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/none"
+
+                    android:layout_marginTop="5dp"
+                    android:text="gluten free" />
+
+                <RadioButton
+                    android:id="@+id/ketogenic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vegan"
+                    android:layout_alignStart="@+id/vegan"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@id/glutenFree"
+                    android:text="keto" />
+
+                <RadioButton
+                    android:id="@+id/pescetarian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vegetarian"
+                    android:layout_alignStart="@+id/vegetarian"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/ketogenic"
+                    android:text="pescetarian" />
+
+                <RadioButton
+                    android:id="@+id/whole30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ketogenic"
+                    android:layout_alignStart="@+id/ketogenic"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/glutenFree"
+                    android:text="whole 30" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:fontFamily="@font/titles"
+                android:text="Choose your intolerances"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/diet" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                <CheckBox
+                    android:id="@+id/peanut"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="peanut" />
+
+                <CheckBox
+                    android:id="@+id/dairy"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="dairy" />
+
+                <CheckBox
+                    android:id="@+id/egg"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="egg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <CheckBox
+                    android:id="@+id/gluten"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="gluten" />
+
+                <CheckBox
+                    android:id="@+id/grain"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="grain" />
+
+                <CheckBox
+                    android:id="@+id/seafood"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="seafood" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+                <CheckBox
+                    android:id="@+id/sesame"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="sesame" />
+
+                <CheckBox
+                    android:id="@+id/shellfish"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="shellfish" />
+
+                <CheckBox
+                    android:id="@+id/soy"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="soy" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+                <CheckBox
+                    android:id="@+id/treenut"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="tree nut" />
+
+                <CheckBox
+                    android:id="@+id/wheat"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="wheat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/outlineb2"
+                    android:text="Cancel"
+                    android:textColor="@color/colorPrimaryDark" />
+                <Button
+                    android:id="@+id/ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/outlineb1"
+                    android:text="Save"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

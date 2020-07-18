@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "580631904926",
+    "firebase_url": "https://bonappetit-bf497.firebaseio.com",
+    "project_id": "bonappetit-bf497",
+    "storage_bucket": "bonappetit-bf497.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580631904926:android:b5dc41d1867865d40df18f",
+        "android_client_info": {
+          "package_name": "com.bonappetit.bonappetit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580631904926-inhpjkqsfvkgs637ndk2u414hil549vv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bonappetit.bonappetit",
+            "certificate_hash": "4a119f4f18b9b60372589864117cdef1284bb01c"
+          }
+        },
+        {
+          "client_id": "580631904926-qn405lcanlfv1089ck3frius6aescoho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9iXO_6MWf1RuvMmqyljCpzBeNCWKzMUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580631904926-qn405lcanlfv1089ck3frius6aescoho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
